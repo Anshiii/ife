@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+
+
+<script type="text/javascript" src="Observer.js">
+
+</script>
+<script type="text/javascript">
+    var a = new Observer({name:'nick',age:23});
+  console.log(a)
+  a.$watch("age",function (age) {
+      console.log("我的年龄变了，我现在是"+age+"岁了")
+  })
+</script>
+</body>
+</html>
